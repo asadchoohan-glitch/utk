@@ -10,7 +10,7 @@ const NAV_ITEMS = [
     label: 'Typing Test', 
     id: 'typing-test',
     dropdown: [
-      { href: '/urdu-typin-test', label: 'Urdu Typing Test' },
+      { href: '/urdu-typing-test', label: 'Urdu Typing Test' },
       { href: '/sindhi-typing-test', label: 'Sindhi Typing Test' },
       { href: '/arabic-typing-test', label: 'Arabic Typing Test' }
     ]

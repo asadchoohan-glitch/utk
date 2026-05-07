@@ -10,7 +10,7 @@ const links = [
   { url: '/', changefreq: 'weekly', priority: 1.0 },
   { url: '/sindhi', changefreq: 'weekly', priority: 0.9 },
   { url: '/arabic', changefreq: 'weekly', priority: 0.9 },
-  { url: '/urdu-typin-test', changefreq: 'weekly', priority: 0.8 },
+  { url: '/urdu-typing-test', changefreq: 'weekly', priority: 0.8 },
   { url: '/sindhi-typing-test', changefreq: 'weekly', priority: 0.8 },
   { url: '/arabic-typing-test', changefreq: 'weekly', priority: 0.8 },
   { url: '/about', changefreq: 'monthly', priority: 0.6 },
