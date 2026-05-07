@@ -1,0 +1,13 @@
+node_modules/
+
+# Build output (keep this ignored unless you deploy by committing dist/)
+dist/
+
+# Local env / logs
+.env
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
