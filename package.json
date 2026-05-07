@@ -1,0 +1,16 @@
+{
+  "name": "online-keyboards",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run generate:sitemap",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sitemap": "^9.0.1",
+    "vite": "^6.0.0"
+  }
+}

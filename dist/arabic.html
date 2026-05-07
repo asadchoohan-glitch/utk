@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Keyboard Online - لوحة المفاتيح العربية | Type Arabic Online Free</title>
+  <meta name="description" content="Free online Arabic keyboard. Type Arabic using your computer keyboard or mouse. Supports Standard and AZERTY layouts. Copy, save, print, and share your Arabic text.">
+  <meta name="keywords" content="arabic keyboard, arabic keyboard online, type arabic, لوحة المفاتيح العربية, arabic typing, online arabic keyboard">
+  <meta property="og:title" content="Arabic Keyboard Online - لوحة المفاتيح العربية">
+  <meta property="og:description" content="Free online Arabic keyboard. Type Arabic using your keyboard or mouse with Standard and AZERTY layouts.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/arabic">
+  <script type="module" crossorigin src="/assets/arabic-Cc4_rmd4.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/footer-BC_FgAKb.js">
+  <link rel="modulepreload" crossorigin href="/assets/keyboard-core-DhVZv0uu.js">
+  <link rel="modulepreload" crossorigin href="/assets/text-actions-z4C68-YT.js">
+  <link rel="modulepreload" crossorigin href="/assets/arabic-keys-DPDQZwKN.js">
+  <link rel="stylesheet" crossorigin href="/assets/footer-Crs_G5Q2.css">
+</head>
+<body>
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Arabic Keyboard — لوحة المفاتيح العربية</h1>
+        <p>Type Arabic online using your keyboard or mouse. Click a key or press the matching key.</p>
+      </div>
+
+      <!-- Action Bar -->
+      <div class="action-bar-wrap">
+        <div class="action-bar-top">
+          <button class="action-btn" onclick="doSelectAll()">Select All</button>
+          <button class="action-btn" onclick="doCopy()">Copy</button>
+          <button class="action-btn" onclick="doUndo()">Undo</button>
+          <button class="action-btn" onclick="doRedo()">Redo</button>
+          <button class="action-btn" onclick="doClearAll()">Clear All</button>
+          <button class="action-btn" onclick="doSaveText()">Save Text</button>
+          <button class="action-btn" onclick="doPrint()">Print</button>
+          <button class="action-btn" onclick="doSpeak()">Speak</button>
+          <button class="action-btn icon-btn" onclick="doFontSize(-2)" title="Shrink text">-</button>
+          <button class="action-btn icon-btn" onclick="doFontSize(2)" title="Enlarge text">+</button>
+        </div>
+        <div class="action-bar-bottom">
+          <a class="action-link soft-button" href="#" onclick="return doEmail()">Send Email</a>
+          <a class="action-link soft-button" href="#" onclick="return doTweet()">Tweet in Arabic</a>
+          <a class="action-link soft-button" href="#" onclick="return doGoogle()">Google in Arabic</a>
+          <a class="action-link soft-button" href="#" onclick="return doTranslate()">Google Translate</a>
+          <a class="action-link soft-button" href="#" onclick="return doWhatsApp()">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="text-area-wrap">
+        <textarea id="output" class="font-arabic" dir="rtl" rows="5" cols="75" spellcheck="false"></textarea>
+      </div>
+
+      <!-- Keyboard -->
+      <div class="keyboard-wrap" id="keyboard"></div>
+
+      <!-- Word/Char Counter & Layout Switcher -->
+      <div class="kb-tools">
+        <div class="kb-switcher">
+          <label>
+            <input type="radio" name="kb-layout" value="standard" checked>
+            Standard (Arabic 102)
+          </label>
+          <label>
+            <input type="radio" name="kb-layout" value="azerty">
+            AZERTY (Arabic 102 AZERTY)
+          </label>
+        </div>
+        <div class="text-stats" id="text-stats">
+          <span>Characters: 0</span>
+          <span>Words: 0</span>
+        </div>
+      </div>
+
+      <!-- Keyboard Shortcut Guide -->
+      <div class="shortcut-guide">
+        <h3>⌨ Keyboard Shortcuts</h3>
+        <div class="shortcut-list">
+          <div class="shortcut-item"><kbd>Esc</kbd> Toggle Arabic / QWERTY mode</div>
+          <div class="shortcut-item"><kbd>Shift</kbd> Type shifted characters</div>
+          <div class="shortcut-item"><kbd>Caps</kbd> Toggle caps lock</div>
+          <div class="shortcut-item"><kbd>Ctrl+C</kbd> Copy text</div>
+          <div class="shortcut-item"><kbd>Ctrl+A</kbd> Select all text</div>
+          <div class="shortcut-item"><kbd>Ctrl+Z</kbd> Undo</div>
+        </div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="info-text">
+        <p>This <strong>Arabic Keyboard</strong> enables you to easily type Arabic online without installing an Arabic keyboard. You can use your computer keyboard or mouse to type Arabic letters with this online keyboard.</p>
+        <p>Pressing <strong>Esc</strong> toggles between Arabic and QWERTY passthrough mode. Press <strong>Shift</strong> for additional characters shown in <strong style="color:var(--key-char-shift)">blue</strong>. Normal characters are shown in <strong style="color:var(--key-char-normal)">red</strong>.</p>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

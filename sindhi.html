@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sd" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindhi Keyboard Online - سنڌي ڪي بورڊ | Type Sindhi Online Free</title>
+  <meta name="description" content="Free online Sindhi keyboard. Type Sindhi Arabic script using your computer keyboard or mouse. Copy, save, print, and share your Sindhi text easily.">
+  <meta name="keywords" content="sindhi keyboard, sindhi keyboard online, type sindhi, سنڌي ڪي بورڊ, sindhi typing, online sindhi keyboard">
+  <meta property="og:title" content="Sindhi Keyboard Online - سنڌي ڪي بورڊ">
+  <meta property="og:description" content="Free online Sindhi keyboard. Type Sindhi using your keyboard or mouse.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/sindhi">
+</head>
+<body>
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Sindhi Keyboard — سنڌي ڪي بورڊ</h1>
+        <p>Type in Sindhi online — click or type, copy and paste. Done!</p>
+      </div>
+
+      <!-- Action Bar -->
+      <div class="action-bar-wrap">
+        <div class="action-bar-top">
+          <button class="action-btn" onclick="doSelectAll()">Select All</button>
+          <button class="action-btn" onclick="doCopy()">Copy</button>
+          <button class="action-btn" onclick="doUndo()">Undo</button>
+          <button class="action-btn" onclick="doRedo()">Redo</button>
+          <button class="action-btn" onclick="doClearAll()">Clear All</button>
+          <button class="action-btn" onclick="doSaveText()">Save Text</button>
+          <button class="action-btn" onclick="doPrint()">Print</button>
+          <button class="action-btn" onclick="doSpeak()">Speak</button>
+          <button class="action-btn icon-btn" onclick="doFontSize(-2)" title="Shrink text">-</button>
+          <button class="action-btn icon-btn" onclick="doFontSize(2)" title="Enlarge text">+</button>
+        </div>
+        <div class="action-bar-bottom">
+          <a class="action-link soft-button" href="#" onclick="return doEmail()">Send Email</a>
+          <a class="action-link soft-button" href="#" onclick="return doTweet()">Tweet in Sindhi</a>
+          <a class="action-link soft-button" href="#" onclick="return doGoogle()">Google in Sindhi</a>
+          <a class="action-link soft-button" href="#" onclick="return doTranslate()">Google Translate</a>
+          <a class="action-link soft-button" href="#" onclick="return doWhatsApp()">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="text-area-wrap">
+        <textarea id="output" class="font-arabic" dir="rtl" rows="5" cols="75" spellcheck="false"></textarea>
+      </div>
+
+      <!-- Keyboard -->
+      <div class="keyboard-wrap" id="keyboard"></div>
+
+      <!-- Word/Char Counter & Layout Switcher -->
+      <div class="kb-tools">
+        <div class="text-stats" id="text-stats">
+          <span>Characters: 0</span>
+          <span>Words: 0</span>
+        </div>
+      </div>
+
+      <!-- Keyboard Shortcut Guide -->
+      <div class="shortcut-guide">
+        <h3>⌨ Keyboard Shortcuts</h3>
+        <div class="shortcut-list">
+          <div class="shortcut-item"><kbd>Esc</kbd> Toggle Sindhi / QWERTY mode</div>
+          <div class="shortcut-item"><kbd>Shift</kbd> Type shifted characters</div>
+          <div class="shortcut-item"><kbd>Caps</kbd> Toggle caps lock</div>
+          <div class="shortcut-item"><kbd>Ctrl+C</kbd> Copy text</div>
+          <div class="shortcut-item"><kbd>Ctrl+A</kbd> Select all text</div>
+          <div class="shortcut-item"><kbd>Ctrl+Z</kbd> Undo</div>
+        </div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="info-text">
+        <p>This <strong>Sindhi Keyboard</strong> enables you to easily type Arabic Sindhi online without installing a Sindhi keyboard. You can use your computer keyboard or mouse to type Sindhi letters with this online keyboard.</p>
+        <p>Pressing <strong>Esc</strong> on the Sindhi keyboard layout will toggle the mouse input between virtual QWERTY keyboard and virtual Sindhi keyboard. Pressing <strong>Esc</strong> on your keyboard has the same function.</p>
+        <p>Press <strong>Shift</strong> for additional Sindhi letters that are not visible on the keyboard.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="/src/js/sindhi.js"></script>
+</body>
+</html>

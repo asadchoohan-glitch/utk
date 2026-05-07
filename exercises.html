@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Exercises - Improve Your Speed</title>
+  <meta name="description" content="Practice typing with interactive exercises. Focus on home row, top row, and bottom row drills.">
+  <meta property="og:title" content="Typing Exercises & Drills">
+  <meta property="og:description" content="Interactive typing drills to improve your speed and accuracy.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/exercises">
+</head>
+<body class="exercises-page">
+
+  <main class="page-content">
+    <div class="container" id="main-container">
+
+      <!-- Page Header -->
+      <div class="page-header" id="page-header">
+        <h1>Typing Exercises</h1>
+        <p>Master your keyboard with targeted drills.</p>
+      </div>
+
+      <!-- Test Config Bar -->
+      <div class="test-config-bar" id="config-bar">
+        <select id="exercise-lang" class="test-select">
+          <option value="en">English</option>
+          <option value="ur">Urdu (اردو)</option>
+        </select>
+
+        <select id="exercise-type" class="test-select">
+          <option value="home">Home Row Drill</option>
+          <option value="top">Top Row Drill</option>
+          <option value="bottom">Bottom Row Drill</option>
+        </select>
+        
+        <button id="btn-focus" class="action-btn">Focus Mode</button>
+        <button id="btn-restart" class="action-btn">Start Drill</button>
+      </div>
+
+      <!-- Live Stats Bar -->
+      <div class="test-stats-bar" id="stats-bar">
+        <div class="stat-box">
+          <span class="stat-label">Errors</span>
+          <span class="stat-value" id="stat-err">0</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Accuracy</span>
+          <span class="stat-value" id="stat-acc">100%</span>
+        </div>
+      </div>
+
+      <!-- Typing Area -->
+      <div class="typing-test-box" id="typing-test-box" dir="ltr">
+        <div class="text-display" id="text-display">Select a drill and start...</div>
+        <input type="text" id="hidden-input" class="hidden-input" autocomplete="off" spellcheck="false">
+      </div>
+
+      <!-- Keyboard Container -->
+      <div class="keyboard-wrap" id="keyboard"></div>
+
+    </div>
+  </main>
+
+  <script type="module" src="/src/js/exercises.js"></script>
+</body>
+</html>

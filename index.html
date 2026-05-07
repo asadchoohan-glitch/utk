@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urdu Keyboard Online - اردو کی بورڈ | Type Urdu Online Free</title>
+  <meta name="description" content="Free online Urdu keyboard. Type Urdu using your computer keyboard or mouse. Supports Standard and Phonetic layouts. Copy, save, print, and share your Urdu text easily.">
+  <meta name="keywords" content="urdu keyboard, urdu keyboard online, type urdu, اردو کی بورڈ, urdu typing, online urdu keyboard">
+  <meta property="og:title" content="Urdu Keyboard Online - اردو کی بورڈ">
+  <meta property="og:description" content="Free online Urdu keyboard. Type Urdu using your keyboard or mouse with Standard and Phonetic layouts.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/">
+</head>
+<body>
+  <!-- Header & Footer injected by JS -->
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Urdu Keyboard — اردو کی بورڈ</h1>
+        <p>Type in Urdu online — click or type, copy and paste. Done!</p>
+      </div>
+
+      <!-- Action Bar -->
+      <div class="action-bar-wrap">
+        <div class="action-bar-top">
+          <button class="action-btn" onclick="doSelectAll()">Select All</button>
+          <button class="action-btn" onclick="doCopy()">Copy</button>
+          <button class="action-btn" onclick="doUndo()">Undo</button>
+          <button class="action-btn" onclick="doRedo()">Redo</button>
+          <button class="action-btn" onclick="doClearAll()">Clear All</button>
+          <button class="action-btn" onclick="doSaveText()">Save Text</button>
+          <button class="action-btn" onclick="doPrint()">Print</button>
+          <button class="action-btn" onclick="doSpeak()">Speak</button>
+          <button class="action-btn icon-btn" onclick="doFontSize(-2)" title="Shrink text">-</button>
+          <button class="action-btn icon-btn" onclick="doFontSize(2)" title="Enlarge text">+</button>
+        </div>
+        <div class="action-bar-bottom">
+          <a class="action-link soft-button" href="#" onclick="return doEmail()">Send Email</a>
+          <a class="action-link soft-button" href="#" onclick="return doTweet()">Tweet in Urdu</a>
+          <a class="action-link soft-button" href="#" onclick="return doGoogle()">Google in Urdu</a>
+          <a class="action-link soft-button" href="#" onclick="return doTranslate()">Google Translate</a>
+          <a class="action-link soft-button" href="#" onclick="return doWhatsApp()">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="text-area-wrap">
+        <textarea id="output" dir="rtl" rows="5" cols="75" spellcheck="false"></textarea>
+      </div>
+
+      <!-- Keyboard -->
+      <div class="keyboard-wrap" id="keyboard"></div>
+
+      <!-- Word/Char Counter & Layout Switcher -->
+      <div class="kb-tools">
+        <div class="kb-switcher">
+        <label>
+          <input type="radio" name="kb-type" value="standard" checked>
+          Urdu Keyboard
+        </label>
+        <label>
+          <input type="radio" name="kb-type" value="phonetic">
+          Phonetic Keyboard
+        </div>
+        <div class="text-stats" id="text-stats">
+          <span>Characters: 0</span>
+          <span>Words: 0</span>
+        </div>
+      </div>
+
+      <!-- Keyboard Shortcut Guide -->
+      <div class="shortcut-guide">
+        <h3>⌨ Keyboard Shortcuts</h3>
+        <div class="shortcut-list">
+          <div class="shortcut-item"><kbd>Esc</kbd> Toggle Urdu / QWERTY mode</div>
+          <div class="shortcut-item"><kbd>Shift</kbd> Type shifted characters</div>
+          <div class="shortcut-item"><kbd>Caps</kbd> Toggle caps lock (Phonetic)</div>
+          <div class="shortcut-item"><kbd>Ctrl+C</kbd> Copy text</div>
+          <div class="shortcut-item"><kbd>Ctrl+A</kbd> Select all text</div>
+          <div class="shortcut-item"><kbd>Ctrl+Z</kbd> Undo</div>
+        </div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="info-text">
+        <p>This <strong>Urdu Keyboard</strong> enables you to easily type Urdu online without installing an Urdu keyboard. You can use your computer keyboard or mouse to type Urdu letters with this online keyboard.</p>
+        <p>Pressing <strong>Esc</strong> on the Urdu keyboard layout will toggle the mouse input between virtual QWERTY keyboard and virtual Urdu keyboard. The key will also turn on/off your keyboard input conversion. Pressing <strong>Esc</strong> on your keyboard has the same function.</p>
+        <p>Press <strong>Shift</strong> for additional Urdu letters that are not visible on the keyboard. Normal characters are shown in <strong style="color:var(--key-char-normal)">red</strong>, and shift characters are shown in <strong style="color:var(--key-char-shift)">blue</strong>.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="/src/js/urdu.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test Online - Multi-Language Typing Speed Test</title>
+  <meta name="description" content="Test your typing speed online in English, Urdu, Sindhi, and Arabic. Real-time WPM, accuracy, and error tracking. Improve your typing skills today.">
+  <meta property="og:title" content="Multi-Language Typing Test Online">
+  <meta property="og:description" content="Real-time typing test for English, Urdu, Sindhi, and Arabic.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/typing-test">
+</head>
+<body>
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Typing Speed Test</h1>
+        <p>Test your WPM in English, Urdu, Sindhi, and Arabic.</p>
+      </div>
+
+      <!-- Test Config Bar -->
+      <div class="test-config-panel">
+        <div class="test-config-row">
+          <select id="test-language" class="test-select">
+            <option value="en">English</option>
+            <option value="ur">Urdu (اردو)</option>
+            <option value="sd">Sindhi (سنڌي)</option>
+            <option value="ar">Arabic (العربية)</option>
+          </select>
+
+          <select id="test-difficulty" class="test-select">
+            <option value="simple" selected>Simple</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+          </select>
+
+          <select id="test-type" class="test-select">
+            <option value="timed" selected>Timed Test</option>
+            <option value="fixed">Fixed-Text</option>
+            <option value="words">Random Words</option>
+            <option value="paragraph">Paragraph</option>
+            <option value="real">Real-World</option>
+          </select>
+
+          <select id="test-time" class="test-select">
+            <option value="60" selected>1 Minute</option>
+            <option value="300">5 Minutes</option>
+          </select>
+          
+          <button id="btn-restart" class="action-btn">Restart Test</button>
+        </div>
+        <div class="test-config-options">
+          <label class="toggle-label">
+            <input type="checkbox" id="test-practice">
+            <span class="toggle-text">Practice Mode</span>
+          </label>
+          <label class="toggle-label">
+            <input type="checkbox" id="test-keyboard-toggle" checked>
+            <span class="toggle-text">Show Keyboard</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Live Stats Bar -->
+      <div class="test-stats-bar">
+        <div class="stat-box">
+          <span class="stat-label">Time</span>
+          <span class="stat-value" id="stat-time">60s</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">WPM</span>
+          <span class="stat-value" id="stat-wpm">0</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Accuracy</span>
+          <span class="stat-value" id="stat-acc">100%</span>
+        </div>
+      </div>
+
+      <!-- Typing Area -->
+      <div class="typing-test-box" id="typing-test-box" dir="ltr">
+        <!-- Text to type will be injected here -->
+        <div class="text-display" id="text-display">Loading...</div>
+        <!-- Hidden input to capture keystrokes on mobile/desktop cleanly -->
+        <input type="text" id="hidden-input" class="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </div>
+
+      <!-- Keyboard Container -->
+      <div class="keyboard-wrap" id="keyboard"></div>
+
+      <!-- Results Area (Hidden by default) -->
+      <div id="results-area" class="results-area" style="display: none;">
+        <h2>Test Results</h2>
+        <div class="results-stats">
+          <div class="stat-box">
+            <span class="stat-label">Final WPM</span>
+            <span class="stat-value" id="res-wpm">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Accuracy</span>
+            <span class="stat-value" id="res-acc">0%</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Errors</span>
+            <span class="stat-value" id="res-err">0</span>
+          </div>
+        </div>
+        <div id="graph-container" class="graph-container"></div>
+        <p class="heatmap-note">Note: Check the keyboard above for a heatmap of your missed keys (highlighted in red).</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="/src/js/typing-test.js"></script>
+</body>
+</html>

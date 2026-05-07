@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Typing Test - Online Speed and Accuracy Test</title>
+  <meta name="description" content="Practice Arabic typing online in Basic, Advanced, and Expert modes. Measure WPM, accuracy, errors, and typed characters with instant results.">
+  <meta name="keywords" content="arabic typing test, arabic speed test, arabic keyboard typing, arabic wpm test">
+  <meta property="og:title" content="Arabic Typing Test Online">
+  <meta property="og:description" content="Type Arabic with real-time performance statistics and retry instantly.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/arabic-typing-test">
+</head>
+<body>
+  <main class="page-content typing-page">
+    <section class="container">
+      <header class="page-header typing-header">
+        <h1>Arabic Typing Test</h1>
+        <p>Fast and reliable Arabic typing practice using your existing keyboard setup.</p>
+      </header>
+
+      <nav class="language-switch" aria-label="Typing Test Language Navigation">
+        <a href="/urdu-typin-test" class="lang-tab">Urdu</a>
+        <a href="/sindhi-typing-test" class="lang-tab">Sindhi</a>
+        <a href="/arabic-typing-test" class="lang-tab active">Arabic</a>
+      </nav>
+
+      <section class="test-config-panel test-config-panel-modern" aria-label="Test Settings">
+        <div class="test-config-row">
+          <label for="test-mode">Mode</label>
+          <select id="test-mode" class="test-select">
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+          </select>
+
+          <label for="test-time">Time</label>
+          <select id="test-time" class="test-select">
+            <option value="300">5 Minutes</option>
+            <option value="600">10 Minutes</option>
+            <option value="1200">20 Minutes</option>
+            <option value="1800">30 Minutes</option>
+          </select>
+
+          <label class="toggle-label">
+            <input type="checkbox" id="toggle-keyboard" checked>
+            <span class="toggle-text">Show Keyboard</span>
+          </label>
+        </div>
+      </section>
+
+      <section id="typing-test-panel">
+        <div class="typing-status-line">
+          <span>Mode: <strong id="active-mode-label">Basic</strong></span>
+          <span>Duration: <strong id="active-time-label">5 Minutes</strong></span>
+        </div>
+
+        <div class="typing-test-box typing-test-box-modern" id="typing-test-box" dir="rtl">
+          <div id="text-display" class="text-display text-display-three-lines"></div>
+        </div>
+
+        <div class="test-stats-bar test-stats-grid">
+          <div class="stat-box"><span class="stat-label">Time Left</span><span class="stat-value" id="stat-time">05:00</span></div>
+          <div class="stat-box"><span class="stat-label">WPM</span><span class="stat-value" id="stat-wpm">0</span></div>
+          <div class="stat-box"><span class="stat-label">Accuracy</span><span class="stat-value" id="stat-acc">100%</span></div>
+          <div class="stat-box"><span class="stat-label">Errors</span><span class="stat-value" id="stat-errors">0</span></div>
+          <div class="stat-box"><span class="stat-label">Characters</span><span class="stat-value" id="stat-chars">0</span></div>
+        </div>
+
+        <textarea id="user-input" class="typing-user-input" dir="rtl" rows="3" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="اكتب هنا..."></textarea>
+
+        <div class="test-actions">
+          <button id="btn-start-pause" class="action-btn test-action-main">Pause</button>
+          <button id="btn-restart" class="action-btn">Restart</button>
+        </div>
+      </section>
+
+      <section id="result-panel" class="results-area" hidden>
+        <h2>Result</h2>
+        <div class="results-stats results-stats-grid">
+          <div class="stat-box"><span class="stat-label">Final WPM</span><span class="stat-value" id="res-wpm">0</span></div>
+          <div class="stat-box"><span class="stat-label">Accuracy</span><span class="stat-value" id="res-acc">0%</span></div>
+          <div class="stat-box"><span class="stat-label">Errors</span><span class="stat-value" id="res-err">0</span></div>
+          <div class="stat-box"><span class="stat-label">Characters Typed</span><span class="stat-value" id="res-chars">0</span></div>
+        </div>
+        <button id="btn-retry" class="action-btn test-action-main">Retry Test</button>
+      </section>
+
+      <div class="keyboard-wrap" id="keyboard"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/js/arabic-typing-test.js"></script>
+</body>
+</html>
